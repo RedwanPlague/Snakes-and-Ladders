@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurveTo?>
+<?import javafx.scene.shape.HLineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.shape.QuadCurveTo?>
+<?import javafx.scene.shape.VLineTo?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="layout" prefHeight="900.0" prefWidth="1408.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.Board2">
+    <children>
+        <ImageView fx:id="frame" fitHeight="900.0" fitWidth="902.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../MediaFile/board2.jpg" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="403.0" layoutY="318.0" opacity="0.0" prefHeight="73.0" prefWidth="70.0" text="0">
+            <font>
+                <Font size="50.0" />
+            </font>
+        </Label>
+        <Button fx:id="roll" layoutX="1091.0" layoutY="401.0" mnemonicParsing="false" onAction="#roll" prefHeight="80.0" prefWidth="158.0" text="Roll">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+         <opaqueInsets>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+        <Button fx:id="leave" layoutX="1249.0" layoutY="810.0" mnemonicParsing="false" onAction="#leave" prefHeight="66.0" prefWidth="140.0" text="Leave">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+         <opaqueInsets>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+        <ImageView fx:id="face" fitHeight="193.0" fitWidth="200.0" layoutX="1043.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" />
+      <Path fx:id="rocket4" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="120.0" />
+            <QuadCurveTo controlX="241.0" controlY="-205.0" x="280.0" y="-240.0" />
+          </elements>
+      </Path>
+      <Path fx:id="rocket30" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="360.0" y="-80.0" />
+              <QuadCurveTo controlX="281.0" controlY="-240.0" x="200.0" y="-343.0" />
+            <VLineTo y="-360.0" />
+          </elements>
+      </Path>
+      <Path fx:id="path43" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="80.0" y="-160.0" />
+            <CubicCurveTo controlX1="253.0" controlX2="49.0" controlY1="-153.0" controlY2="-74.0" x="120.0" y="-40.0" />
+          </elements>
+      </Path>
+      <Path fx:id="path50" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+         <elements>
+            <MoveTo x="360.0" y="-160.0" />
+            <CubicCurveTo controlX1="291.0" controlX2="330.0" controlY1="-148.0" controlY2="-99.0" x="268.0" y="-92.0" />
+            <CubicCurveTo controlX1="196.0" controlX2="258.0" controlY1="-69.0" controlY2="18.0" x="160.0" />
+         </elements>
+      </Path>
+      <Path fx:id="path56" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="160.0" y="-200.0" />
+              <QuadCurveTo controlX="300.0" controlY="-228.0" x="265.0" y="-122.0" />
+            <CubicCurveTo controlX1="229.0" controlX2="282.0" controlY1="-60.0" controlY2="-40.0" x="280.0" />
+          </elements>
+      </Path>
+      <Path fx:id="path87" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="240.0" y="-320.0" />
+              <QuadCurveTo controlX="406.0" controlY="-314.0" x="305.0" y="-160.0" />
+            <HLineTo x="320.0" />
+          </elements>
+      </Path>
+      <Path fx:id="path73" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="280.0" y="-280.0" />
+            <CubicCurveTo controlX1="129.0" controlX2="265.0" controlY1="-279.0" controlY2="-150.0" x="200.0" y="-116.0" />
+            <QuadCurveTo controlX="153.0" controlY="-85.0" x="200.0" y="-40.0" />
+          </elements>
+      </Path>
+      <Path fx:id="path84" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="120.0" y="-320.0" />
+            <CubicCurveTo controlX1="217.0" controlX2="217.0" controlY1="-324.0" controlY2="-270.0" x="109.0" y="-259.0" />
+            <QuadCurveTo controlX="77.0" controlY="-248.0" x="80.0" y="-240.0" />
+          </elements>
+      </Path>
+      <Path fx:id="path98" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="80.0" y="-360.0" />
+            <CubicCurveTo controlX1="-78.0" controlX2="113.0" controlY1="-331.0" controlY2="-237.0" x="8.0" y="-167.0" />
+            <QuadCurveTo controlX="-14.0" controlY="-148.0" y="-120.0" />
+          </elements>
+      </Path>
+      <ImageView fx:id="face" fitHeight="254.0" fitWidth="251.0" layoutX="1045.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" />
+      <MediaView fx:id="mediaViewObj" fitHeight="200.0" fitWidth="200.0" layoutX="665.0" layoutY="503.0" />
+    </children>
+</AnchorPane>

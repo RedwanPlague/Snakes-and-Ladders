@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="901.0" prefWidth="1399.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.Statistics">
+   <children>
+      <ImageView fitHeight="901.0" fitWidth="1436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../MediaFile/Credit.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="1240.0" layoutY="803.0" mnemonicParsing="false" onAction="#back" prefHeight="74.0" prefWidth="153.0" text="Back">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <MediaView fx:id="mediaViewObj" fitHeight="200.0" fitWidth="200.0" layoutX="7.0" layoutY="6.0" />
+   </children>
+</AnchorPane>

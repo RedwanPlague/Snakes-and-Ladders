@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurveTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.shape.QuadCurveTo?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="layout" prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.Board3">
+    <children>
+      <ImageView fx:id="face" fitHeight="254.0" fitWidth="251.0" layoutX="1041.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="frame" fitHeight="956.0" fitWidth="901.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@board.jpg" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="403.0" layoutY="318.0" opacity="0.0" prefHeight="73.0" prefWidth="70.0" text="0">
+            <font>
+                <Font size="50.0" />
+            </font>
+        </Label>
+        <Button fx:id="roll" layoutX="1022.0" layoutY="405.0" mnemonicParsing="false" onAction="#roll" prefHeight="52.0" prefWidth="120.0" text="Roll">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+         <opaqueInsets>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+        <Path fx:id="path16" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+            <elements>
+                <MoveTo x="160.0" y="-40.0" />
+                <CubicCurveTo controlX1="120.0" controlX2="135.0" controlY1="-40.0" controlY2="30.0" x="160.0" y="5.0" />
+                <CubicCurveTo controlX1="200.0" controlX2="200.0" controlY1="-10.0" controlY2="-10.0" x="200.0" />
+            </elements>
+        </Path>
+        <Path fx:id="path46" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+            <elements>
+                <MoveTo x="200.0" y="-160.0" />
+                <CubicCurveTo controlX1="220.0" controlX2="200.0" controlY1="-130.0" controlY2="-100.0" x="160.0" y="-108.0" />
+                <CubicCurveTo controlX1="120.0" controlX2="90.0" controlY1="-120.0" controlY2="-50.0" x="160.0" y="-80.0" />
+            </elements>
+        </Path>
+        <Path fx:id="path49" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+            <elements>
+                <MoveTo x="320.0" y="-160.0" />
+                <CubicCurveTo controlX1="260.0" controlX2="265.0" controlY1="-160.0" controlY2="-110.0" x="323.0" y="-115.0" />
+                <CubicCurveTo controlX1="320.0" controlX2="320.0" controlY1="-40.0" controlY2="-30.0" x="360.0" y="-40.0" />
+            </elements>
+        </Path>
+        <Path fx:id="path62" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+            <elements>
+                <MoveTo x="40.0" y="-240.0" />
+                <CubicCurveTo controlX1="48.0" controlX2="44.0" controlY1="-160.0" controlY2="-165.0" x="80.0" y="-157.0" />
+                <CubicCurveTo controlX1="102.0" controlX2="120.0" controlY1="-160.0" controlY2="-122.0" x="40.0" y="-117.0" />
+                <CubicCurveTo controlX1="-20.0" controlX2="64.0" controlY1="-89.0" controlY2="-69.0" x="40.0" y="-40.0" />
+            </elements>
+        </Path>
+        <Path fx:id="path74" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+            <elements>
+                <MoveTo x="240.0" y="-275.0" />
+                <CubicCurveTo controlX1="187.0" controlX2="193.0" controlY1="-272.0" controlY2="-240.0" x="245.0" y="-222.0" />
+                <CubicCurveTo controlX1="257.0" controlX2="198.0" controlY1="-179.0" controlY2="-194.0" x="211.0" y="-211.0" />
+                <CubicCurveTo controlX1="216.0" controlX2="265.0" controlY1="-257.0" controlY2="-181.0" x="280.0" y="-200.0" />
+            </elements>
+        </Path>
+        <Path fx:id="path89" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+            <elements>
+                <MoveTo x="320.0" y="-320.0" />
+                <CubicCurveTo controlX1="352.0" controlX2="338.0" controlY1="-307.0" controlY2="-251.0" x="304.0" y="-279.0" />
+                <CubicCurveTo controlX1="289.0" controlX2="266.0" controlY1="-297.0" controlY2="-280.0" x="280.0" y="-240.0" />
+            </elements>
+        </Path>
+        <Path fx:id="path92" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+            <elements>
+                <MoveTo x="320.0" y="-349.0" />
+                <CubicCurveTo controlX1="275.0" controlX2="264.0" controlY1="-382.0" controlY2="-363.0" x="271.0" y="-351.0" />
+                <CubicCurveTo controlX1="318.0" controlX2="270.0" controlY1="-323.0" controlY2="-309.0" x="280.0" y="-320.0" />
+            </elements>
+        </Path>
+        <Path fx:id="path99" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+            <elements>
+                <MoveTo x="40.0" y="-360.0" />
+                <CubicCurveTo controlX1="49.0" controlX2="66.0" controlY1="-362.0" controlY2="-308.0" x="19.0" y="-317.0" />
+                <CubicCurveTo controlX1="51.0" controlX2="14.0" controlY1="-280.0" controlY2="-267.0" y="-280.0" />
+            </elements>
+        </Path>
+        <Path fx:id="path95" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+            <elements>
+                <MoveTo x="200.0" y="-356.0" />
+                <CubicCurveTo controlX1="167.0" controlX2="161.0" controlY1="-365.0" controlY2="-354.0" x="180.0" y="-318.0" />
+                <CubicCurveTo controlX1="174.0" controlX2="155.0" controlY1="-290.0" controlY2="-353.0" x="153.0" y="-312.0" />
+                <QuadCurveTo controlX="176.0" controlY="-291.0" x="163.0" y="-279.0" />
+                <QuadCurveTo controlX="173.0" controlY="-263.0" x="200.0" y="-280.0" />
+            </elements>
+        </Path>
+        <Path fx:id="path64" fill="DODGERBLUE" opacity="0.0" stroke="BLACK" strokeType="INSIDE">
+            <elements>
+                <MoveTo x="120.0" y="-240.0" />
+                <CubicCurveTo controlX1="100.0" controlX2="68.0" controlY1="-238.0" controlY2="-233.0" x="87.0" y="-200.0" />
+                <CubicCurveTo controlX1="83.0" controlX2="85.0" controlY1="-198.0" controlY2="-189.0" x="60.0" y="-205.0" />
+                <QuadCurveTo controlX="45.0" controlY="-184.0" x="28.0" y="-196.0" />
+                <QuadCurveTo controlX="18.0" controlY="-178.0" y="-200.0" />
+            </elements>
+        </Path>
+        <Button fx:id="leave" layoutX="1283.0" layoutY="826.0" mnemonicParsing="false" onAction="#leave" prefHeight="50.0" prefWidth="81.0" text="Leave">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+         <opaqueInsets>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+      <ChoiceBox fx:id="choiceBox" layoutX="1213.0" layoutY="329.0" prefHeight="52.0" prefWidth="70.0">
+         <opaqueInsets>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow />
+         </effect></ChoiceBox>
+      <Button fx:id="temper" layoutX="1177.0" layoutY="405.0" mnemonicParsing="false" onAction="#temper" prefHeight="52.0" prefWidth="143.0" text="Temper">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Text fx:id="temperLeft" layoutX="989.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temper Left : ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <MediaView fx:id="mediaViewObj" fitHeight="200.0" fitWidth="200.0" layoutX="53.0" layoutY="83.0" />
+    </children>
+</AnchorPane>
